@@ -1,6 +1,6 @@
 import pytest
 
-from aoc2022.day_01.calorie_counting import split_by_elf, most_calories_carried_by_elf
+from aoc2022.day_01.calorie_counting import split_by_elf, most_calories_carried_by_elf, total_calories_by_elf_asc
 
 
 @pytest.fixture
@@ -31,8 +31,8 @@ def test_most_calories_carried_by_elf(input_data: str):
     assert most_calories_carried_by_elf(input_data) == 24000
 
 
-def sum_of_top_three_elf_carrying_load(input:str):
-    return 1
+def sum_of_top_three_elf_carrying_load(input: str):
+    return total_calories_by_elf_asc(input)[0]
 
 
 def test_sum_of_top_three_elf_carrying_load():

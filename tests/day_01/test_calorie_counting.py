@@ -13,13 +13,6 @@ def test_read_input_data(input_data: str):
     assert isinstance(input_data, str)
 
 
-def test_most_calories_carried_by_elf(input_data: str):
-    assert most_calories_carried_by_elf("1") == 1
-    assert most_calories_carried_by_elf("1\n\n2") == 2
-    assert most_calories_carried_by_elf("1\n2\n\n2") == 3
-    assert most_calories_carried_by_elf(input_data) == 24000
-
-
 def test_split_by_elf(input_data: str):
     assert split_by_elf("") == []
     assert split_by_elf("1") == ["1"]
@@ -29,3 +22,18 @@ def test_split_by_elf(input_data: str):
     assert split_by_elf("1\n1\n\n2\n\n") == ["1\n1", "2"]
 
     assert len(split_by_elf(input_data)) == 5
+
+
+def test_most_calories_carried_by_elf(input_data: str):
+    assert most_calories_carried_by_elf("1") == 1
+    assert most_calories_carried_by_elf("1\n\n2") == 2
+    assert most_calories_carried_by_elf("1\n2\n\n2") == 3
+    assert most_calories_carried_by_elf(input_data) == 24000
+
+
+def sum_of_top_three_elf_carrying_load(input:str):
+    return 1
+
+
+def test_sum_of_top_three_elf_carrying_load():
+    assert sum_of_top_three_elf_carrying_load("1") == 1

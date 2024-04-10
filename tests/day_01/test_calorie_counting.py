@@ -32,7 +32,7 @@ def test_most_calories_carried_by_elf(input_data: str):
 
 
 def sum_calories_of_n_most_carrying_elfs(n: int, elfs: list[str]) -> int:
-    return 1
+    return total_calories_by_elf_asc(elfs)[0]
 
 
 def test_sum_n_most_carrying_elfs():

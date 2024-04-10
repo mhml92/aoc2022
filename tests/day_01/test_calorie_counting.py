@@ -11,7 +11,7 @@ def group_by_elf(input: str) -> list[str]:
     input = input.strip()
     if not input:
         return []
-    return input.split(sep="\n\n")
+    return input.strip().split(sep="\n\n")
 
 
 def test_group_items_by_elf():

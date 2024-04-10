@@ -1,10 +1,10 @@
-def read_test_data() -> str:
+def read_input_data() -> str:
     with open('tests/day_01/data.txt') as f:
         return f.read()
 
 
 def test_read_data():
-    assert isinstance(read_test_data(), str)
+    assert isinstance(read_input_data(), str)
 
 
 #def group_by_elf() -> list[list[str]]:

@@ -1,6 +1,13 @@
+from pydantic import BaseModel
+
+
 def read_input_data(path: str) -> str:
     with open(path) as f:
         return f.read()
+
+
+class Elf(BaseModel):
+    calories: list[int]
 
 
 def split_by_elf(input: str) -> list[list[int]]:

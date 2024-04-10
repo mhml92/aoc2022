@@ -3,7 +3,7 @@ def read_input_data() -> str:
         return f.read()
 
 
-def test_input_data():
+def test_read_input_data():
     assert isinstance(read_input_data(), str)
 
 

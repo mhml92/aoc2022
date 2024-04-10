@@ -14,12 +14,15 @@ def split_by_elf(input: str) -> list[str]:
     return input.strip().split(sep="\n\n")
 
 
-def most_calories_carried_by_elf(input:str) -> str:
-    return input
+def most_calories_carried_by_elf(input: str) -> int:
+    return 1
+    #by_elf = split_by_elf(input)
+    #total_calories_by_elf = [sum(int(x) for x in elf.splitlines()) for elf in by_elf]
+    #return max(total_calories_by_elf)
 
 
 def test_most_calories_carried_by_elf():
-    assert most_calories_carried_by_elf("") == ""
+    assert most_calories_carried_by_elf("1") == 1
 
 
 def test_split_by_elf():

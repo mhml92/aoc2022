@@ -1,0 +1,7 @@
+engine:
+  cpu-cores: 10
+  enable-web-ui: false
+  load-pytest-plugins: true
+  runtime: pytest
+  timeout: 999999
+pinned-tests: []

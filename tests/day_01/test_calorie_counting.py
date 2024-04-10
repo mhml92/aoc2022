@@ -1,6 +1,6 @@
 import pytest
 
-from aoc2022.day_01.calorie_counting import split_by_elf, Elf, most_calories_carried_by_elf, total_calories_by_elf_asc
+from aoc2022.day_01.calorie_counting import split_by_elf, Elf, most_calories_carried_by_elf
 
 
 @pytest.fixture

@@ -20,13 +20,13 @@ def split_by_elf(input: str) -> list[Elf]:
     return [Elf(calories=[int(x) for x in s.splitlines()]) for s in input.split(sep="\n\n")]
 
 
-def total_calories_by_elf_asc(input: list[Elf]) -> list[int]:
-    return sorted([elf.calories_carried() for elf in input])
+def total_calories_by_elf_desc(input: list[Elf]) -> list[int]:
+    return sorted([elf.calories_carried() for elf in input], reverse=True)
 
 
 def most_calories_carried_by_elf(input: str) -> int:
     by_elf = split_by_elf(input)
-    return total_calories_by_elf_asc(by_elf)[-1]
+    return total_calories_by_elf_desc(by_elf)[0]
 
 
 if __name__ == '__main__':

@@ -51,6 +51,7 @@ def sum_of_top_three_elf_carrying_load(input: str) -> int:
     return result
 
 
-def test_sum_of_top_three_elf_carrying_load():
+def test_sum_of_top_three_elf_carrying_load(input_data):
     assert sum_of_top_three_elf_carrying_load("1") == 1
     assert sum_of_top_three_elf_carrying_load("1\n\n1") == 2
+    assert sum_of_top_three_elf_carrying_load(input_data) == 45000

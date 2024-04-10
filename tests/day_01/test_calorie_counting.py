@@ -43,9 +43,10 @@ def test_most_calories_carried_by_elf(input_data: str):
 
 
 def sum_of_top_three_elf_carrying_load(input: str) -> int:
-    by_elf = split_by_elf(input)
-    return total_calories_by_elf_asc(by_elf)[0]
+    elfs = split_by_elf(input)
+    return sum([elfs[i].calories_carried() for i in range(min(len(elfs), 3))])
 
 
 def test_sum_of_top_three_elf_carrying_load():
     assert sum_of_top_three_elf_carrying_load("1") == 1
+    assert sum_of_top_three_elf_carrying_load("1\n\n1") == 2

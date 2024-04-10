@@ -10,10 +10,13 @@ def split_by_elf(input: str) -> list[str]:
     return input.split(sep="\n\n")
 
 
+def total_calories_by_elf(input: list[str]) -> list[int]:
+    return [sum(int(x) for x in elf.splitlines()) for elf in input]
+
+
 def most_calories_carried_by_elf(input: str) -> int:
     by_elf = split_by_elf(input)
-    total_calories_by_elf = sorted([sum(int(x) for x in elf.splitlines()) for elf in by_elf])
-    return total_calories_by_elf[-1]
+    return sorted(total_calories_by_elf(by_elf))[-1]
 
 
 if __name__ == '__main__':

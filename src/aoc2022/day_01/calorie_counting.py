@@ -25,8 +25,8 @@ def total_calories_by_elf_desc(input: list[Elf]) -> list[int]:
 
 
 def most_calories_carried_by_elf(input: str) -> int:
-    by_elf = split_by_elf(input)
-    return total_calories_by_elf_desc(by_elf)[0]
+    elfs = split_by_elf(input)
+    return sum_calories_of_n_most_carrying_elfs(1, elfs)
 
 
 def sum_calories_of_n_most_carrying_elfs(n: int, elfs: list[Elf]) -> int:

@@ -37,6 +37,7 @@ def sum_calories_of_n_most_carrying_elfs(n: int, elfs: list[str]) -> int:
 
 def test_sum_n_most_carrying_elfs():
     assert sum_calories_of_n_most_carrying_elfs(1, ["1"]) == 1
+    assert sum_calories_of_n_most_carrying_elfs(2, ["1"]) == 1
 
 
 def sum_of_top_three_elf_carrying_load(input: str) -> int:

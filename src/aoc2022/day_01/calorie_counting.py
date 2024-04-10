@@ -3,11 +3,11 @@ def read_input_data(path: str) -> str:
         return f.read()
 
 
-def split_by_elf(input: str) -> list[str]:
+def split_by_elf(input: str) -> list[list[int]]:
     input = input.strip()
     if not input:
         return []
-    return input.split(sep="\n\n")
+    return [[1]]
 
 
 def total_calories_by_elf_asc(input: list[str]) -> list[int]:

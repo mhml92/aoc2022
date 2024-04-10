@@ -42,8 +42,7 @@ def test_sum_n_most_carrying_elfs():
 
 def sum_of_top_three_elf_carrying_load(input: str) -> int:
     elfs = split_by_elf(input)
-    totals = total_calories_by_elf_desc(elfs)
-    return sum(totals[:min(len(totals), 3)])
+    return sum_calories_of_n_most_carrying_elfs(3, elfs)
 
 
 def test_sum_of_top_three_elf_carrying_load(input_data):

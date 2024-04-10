@@ -41,4 +41,5 @@ def sum_of_top_three_elf_carrying_load(input: str) -> int:
 
 if __name__ == '__main__':
     input = read_input_data("input.txt")
-    print(most_calories_carried_by_elf(input))
+    print(f"Most calories carried by elf: {most_calories_carried_by_elf(input)}")
+    print(f"Sum of top three elf carrying load: {sum_of_top_three_elf_carrying_load(input)}")

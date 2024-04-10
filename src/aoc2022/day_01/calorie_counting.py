@@ -29,6 +29,16 @@ def most_calories_carried_by_elf(input: str) -> int:
     return total_calories_by_elf_desc(by_elf)[0]
 
 
+def sum_calories_of_n_most_carrying_elfs(n: int, elfs: list[Elf]) -> int:
+    totals = total_calories_by_elf_desc(elfs)
+    return sum(totals[:min(len(totals), n)])
+
+
+def sum_of_top_three_elf_carrying_load(input: str) -> int:
+    elfs = split_by_elf(input)
+    return sum_calories_of_n_most_carrying_elfs(3, elfs)
+
+
 if __name__ == '__main__':
     input = read_input_data("input.txt")
     print(most_calories_carried_by_elf(input))

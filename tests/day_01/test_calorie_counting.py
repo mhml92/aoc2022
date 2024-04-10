@@ -14,6 +14,13 @@ def split_by_elf(input: str) -> list[str]:
     return input.strip().split(sep="\n\n")
 
 
+def most_calories_carried_by_elf(input:str) -> str:
+    return input
+
+
+def test_most_calories_carried_by_elf():
+    assert most_calories_carried_by_elf("") == ""
+
 
 def test_split_by_elf():
     assert split_by_elf("") == []
@@ -24,4 +31,3 @@ def test_split_by_elf():
     assert split_by_elf("1\n1\n\n2\n\n") == ["1\n1", "2"]
 
     assert len(split_by_elf(read_input_data())) == 5
-

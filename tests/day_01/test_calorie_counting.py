@@ -3,5 +3,8 @@ def read_test_data() -> list[str]:
         return f.read().splitlines()
 
 
-def test_group_items_by_elf():
+def test_read_data_as_list():
     assert isinstance(read_test_data(), list)
+
+
+

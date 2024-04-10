@@ -1,7 +1,7 @@
-def read_test_data() -> str:
+def read_test_data() -> list[str]:
     with open('tests/day_01/data.txt') as f:
-        return f.read()
+        return f.read().splitlines()
 
 
-def test_read_list():
-    assert read_test_data()
+def test_group_items_by_elf():
+    assert isinstance(read_test_data(), list)

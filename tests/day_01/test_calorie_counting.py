@@ -24,6 +24,7 @@ def test_most_calories_carried_by_elf():
     assert most_calories_carried_by_elf("1") == 1
     assert most_calories_carried_by_elf("1\n\n2") == 2
     assert most_calories_carried_by_elf("1\n2\n\n2") == 3
+    assert most_calories_carried_by_elf(read_input_data()) == 24000
 
 
 def test_split_by_elf():

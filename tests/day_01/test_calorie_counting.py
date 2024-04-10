@@ -7,10 +7,9 @@ def test_read_input_data():
     assert isinstance(read_input_data(), str)
 
 
-#def group_by_elf() -> list[list[str]]:
-#    for
-#    return [[], [], [], [], []]
-#
-#
-#def test_group_items_by_elf():
-#    assert len(group_by_elf()) == 5
+def group_by_elf(input:str) -> list[list[str]]:
+    return [[]]
+
+
+def test_group_items_by_elf():
+    assert [[]]

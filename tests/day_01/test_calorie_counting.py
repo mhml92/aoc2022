@@ -1,6 +1,6 @@
 import pytest
 
-from aoc2022.day_01.calorie_counting import split_by_elf
+from aoc2022.day_01.calorie_counting import split_by_elf, Elf
 
 
 @pytest.fixture
@@ -15,7 +15,7 @@ def test_read_input_data(input_data: str):
 
 def test_split_by_elf(input_data: str):
     assert split_by_elf("") == []
-    assert split_by_elf("1") == [[1]]
+    assert split_by_elf("1") == [Elf(calories=[1])]
     #assert split_by_elf("1\n1") == [[1, 1]]
     #assert split_by_elf("1\n\n1") == [[1], [1]]
     #assert split_by_elf("1\n1\n\n2") == [[1, 1], [2]]

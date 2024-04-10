@@ -10,11 +10,11 @@ class Elf(BaseModel):
     calories: list[int]
 
 
-def split_by_elf(input: str) -> list[list[int]]:
+def split_by_elf(input: str) -> list[Elf]:
     input = input.strip()
     if not input:
         return []
-    return [[int(x) for x in s.splitlines()] for s in input.split(sep="\n\n")]
+    return [Elf(calories=[int(x) for x in s.splitlines()]) for s in input.split(sep="\n\n")]
 
 
 def total_calories_by_elf_asc(input: list[str]) -> list[int]:

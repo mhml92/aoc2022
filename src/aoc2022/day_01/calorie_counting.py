@@ -7,7 +7,13 @@ def split_by_elf(input: str) -> list[list[int]]:
     input = input.strip()
     if not input:
         return []
-    return [[1]]
+    try:
+        x = int(input)
+        return [[x]]
+    except:
+        pass
+
+    return [[int(x) for x in s.splitlines()] for s in input.split(sep="\n\n")]
 
 
 def total_calories_by_elf_asc(input: list[str]) -> list[int]:

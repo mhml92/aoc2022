@@ -1,3 +1,7 @@
-def test_read_list():
+def read_test_data() -> str:
     with open('tests/day_01/data.txt') as f:
-        assert f.read()
+        return f.read()
+
+
+def test_read_list():
+    assert read_test_data()

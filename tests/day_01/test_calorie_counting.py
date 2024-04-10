@@ -8,8 +8,11 @@ def test_read_input_data():
 
 
 def group_by_elf(input:str) -> list[list[str]]:
-    return []
+    if not input:
+        return []
+    return [[input]]
 
 
 def test_group_items_by_elf():
     assert group_by_elf("") == []
+    assert group_by_elf("1") == [["1"]]

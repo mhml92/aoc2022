@@ -31,7 +31,15 @@ def test_most_calories_carried_by_elf(input_data: str):
     assert most_calories_carried_by_elf(input_data) == 24000
 
 
-def sum_of_top_three_elf_carrying_load(input: str):
+def sum_colories_of_n_most_carrying_elfs(n: int, elfs: list[str]) -> int:
+    return 1
+
+
+def test_sum_n_most_carrying_elfs():
+    assert sum_colories_of_n_most_carrying_elfs(1, ["1"]) == 1
+
+
+def sum_of_top_three_elf_carrying_load(input: str) -> int:
     return total_calories_by_elf_asc(input)[0]
 
 

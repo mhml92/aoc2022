@@ -7,7 +7,7 @@ def split_by_elf(input: str) -> list[str]:
     input = input.strip()
     if not input:
         return []
-    return input.strip().split(sep="\n\n")
+    return input.split(sep="\n\n")
 
 
 def most_calories_carried_by_elf(input: str) -> int:
